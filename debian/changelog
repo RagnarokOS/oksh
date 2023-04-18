@@ -1,3 +1,9 @@
+oksh (7.3) -dev; urgency=medium
+
+  * Bumped to version 7.3.
+
+ -- Ian LeCorbeau <I-LeCorbeau@protonmail.com>  Tue, 18 Apr 2023 14:04:22 -0400
+
 oksh (7.2-1) unstable; urgency=medium
 
   * Initial release.
