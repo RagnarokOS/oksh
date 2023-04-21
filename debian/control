@@ -1,6 +1,6 @@
 Source: oksh
 Section: shells
-Priority: optional
+Priority: required
 Maintainer: Ian LeCorbeau <I-LeCorbeau@protonmail.com>
 Build-Depends: 	debhelper-compat (= 13),
 		libncurses-dev
