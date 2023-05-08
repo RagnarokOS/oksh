@@ -1,3 +1,9 @@
+oksh (7.3-1) dev; urgency=medium
+
+  * sourcing ~/.aliases in etc/skel/.kshrc
+
+ -- Ian LeCorbeau <I-LeCorbeau@protonmail.com>  Mon, 08 May 2023 14:36:38 -0400
+
 oksh (7.3) dev; urgency=medium
 
   * Bumped to version 7.3.
