@@ -2,6 +2,11 @@
 
 . /etc/ksh.kshrc
 
+# Source .aliases if it exists
+if [ -f ~/.aliases ]; then
+	. ~/.aliases
+fi
+
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
@@ -19,6 +24,7 @@ HISTCONTROL=ingnoredups
 
 export VISUAL="vim"
 export EDITOR="$VISUAL"
+export PAGER="less"
 
 # Uncomment to use vi mode
 #set -o vi
