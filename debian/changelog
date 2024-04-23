@@ -1,3 +1,9 @@
+oksh (7.5-ragnarok01) stable; urgency=medium
+
+  * Bump version to 7.5.
+
+ -- Ian LeCorbeau <I-LeCorbeau@protonmail.com>  Tue, 23 Apr 2024 11:15:23 -0400
+
 oksh (7.4-ragnarok01) stable; urgency=medium
 
   * ragnarok01 build.
