@@ -26,8 +26,8 @@ install:
 	install -d ${DESTDIR}${MANDIR}/man1
 	install -c -s -m 755 ${PROG} ${DESTDIR}${BINDIR}
 	install -c -m 644 ${PROG}.1 ${DESTDIR}${MANDIR}/man1
-	install -c ksh.kshrc ${DESTDIR}/etc
-	install -c .kshrc ${DESTDIR}/etc/skel
+	install -c -m 644 ksh.kshrc ${DESTDIR}/etc
+	install -c -m 644 .kshrc ${DESTDIR}/etc/skel
 
 uninstall:
 	rm -f ${DESTDIR}${BINDIR}/${PROG}
