@@ -450,6 +450,10 @@ shf_read(char *buf, int bsize, struct shf *shf)
 		ncopy = shf->rnleft;
 		if (ncopy > bsize)
 			ncopy = bsize;
+		if (memchr((char *)shf->rp, '\0', ncopy) != NULL) {
+			errorf("syntax error: NUL byte unexpected");
+			return EOF;
+		}
 		memcpy(buf, shf->rp, ncopy);
 		buf += ncopy;
 		bsize -= ncopy;
@@ -493,6 +497,10 @@ shf_getse(char *buf, int bsize, struct shf *shf)
 		ncopy = end ? end - shf->rp + 1 : shf->rnleft;
 		if (ncopy > bsize)
 			ncopy = bsize;
+		if (memchr((char *)shf->rp, '\0', ncopy) != NULL) {
+			errorf("syntax error: NUL byte unexpected");
+			return NULL;
+		}
 		memcpy(buf, (char *) shf->rp, ncopy);
 		shf->rp += ncopy;
 		shf->rnleft -= ncopy;
