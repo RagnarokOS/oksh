@@ -512,20 +512,19 @@ findhist(int start, int fwd, const char *str, int anchored)
 int
 findhistrel(const char *str)
 {
+	const char *errstr;
 	int	maxhist = histptr - history;
-	int	start = maxhist - 1;
-	int	rec = atoi(str);
+	int	rec;
+
+	rec = strtonum(str, -maxhist, maxhist, &errstr);
+	if (errstr)
+		return -1;
 
 	if (rec == 0)
 		return -1;
-	if (rec > 0) {
-		if (rec > maxhist)
-			return -1;
+	if (rec > 0)
 		return rec - 1;
-	}
-	if (rec > maxhist)
-		return -1;
-	return start + rec + 1;
+	return maxhist + rec;
 }
 
 void

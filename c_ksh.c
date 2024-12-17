@@ -810,8 +810,8 @@ c_typeset(char **wp)
 						if ((vp->flag&INT_U))
 							shprintf("-U ");
 						shprintf("%s\n", vp->name);
-						    if (vp->flag&ARRAY)
-						break;
+						if (vp->flag&ARRAY)
+							break;
 					} else {
 						if (pflag)
 							shprintf("%s ",
