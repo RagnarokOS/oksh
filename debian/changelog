@@ -1,3 +1,10 @@
+oksh (7.6-ragnarok02) unstable; urgency=medium
+
+  * Build for -current.
+  * Update to match with OpenBSD 7.6.
+
+ -- Ian LeCorbeau <I-LeCorbeau@protonmail.com>  Mon, 20 Jan 2025 20:02:31 -0500
+
 oksh (7.5-ragnarok1.1) stable; urgency=medium
 
   * Enforce no invalid characters in shell scripts.
