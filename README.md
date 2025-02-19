@@ -1,6 +1,3 @@
-**Temporary branch to test the Gentoo ebuild. When done, this will be
-merged with master.**
-
 OpenBSD's ksh for Debian/Ragnarok
 =================================
 
