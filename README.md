@@ -1,30 +1,5 @@
-OpenBSD's ksh for Debian/Ragnarok
+OpenBSD's ksh for Gentoo/Ragnarok
 =================================
-
-Forked from https://github.com/ibara/oksh
-
-This is the source to build a .deb package for OpenBSD's ksh on Debian and derivatives.
-
-The package can be built, provided that devscripts is installed, with the following command:
-
-```
-debuild -i -us -uc -b
-```
-
-Non-Debian distributions
-========================
-
-Although this can be built on other distros, it's highly recommended to instead use the original
-version by Ibara, as there are no differences between the version in this repo and his, aside from
-the Debian/ subdirectory (which is only useful when building a .deb package).
-
-However, files in debian/etc may be useful. The configure line in debian/rules may be of use as well,
-for those who wish to include hardening cflags/ldflags.
-
--------------------------
-
-oksh
-====
 
 Portable OpenBSD `ksh(1)`. Not an official OpenBSD project.
 
@@ -165,5 +140,5 @@ for details.
 
 Get a tarball
 -------------
-See releases tab. The latest release is oksh-7.4, which matches the ksh(1)
-from OpenBSD 7.4, released October 8, 2024.
+See releases tab. The latest release is oksh-7.8, which matches the ksh(1)
+from OpenBSD 7.8, released October 22, 2025.
